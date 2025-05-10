@@ -26,6 +26,27 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Comandos
+```bash
+$ curl  -X POST -H "Content-Type: application/json" -d '{"username":"andres2","password":"123456"}' http://localhost:3000/auth/login
+$  curl -X POST -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuZHJlczIiLCJzdWIiOjQsImlzQWRtaW4iOnRydWUsImlhdCI6MTc0Njg2MDE3MiwiZXhwIjoxNzQ2ODYxMzMyfQ.ZXI1kGdSzyVMbrnRPYByFemPVBEmr3WNgfJzSNHeBkg" -F "title=la ultima barricada" -F "content=la ultima barricada del campo" -F "userId=1" -F "image=@/home/jose/Descargas/weather.png" http://localhost:3000/posts  
+```
+```
+curl -X POST -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuZHJlczIiLCJzdWIiOjQsImlzQWRtaW4iOnRydWUsIm
+lhdCI6MTc0Njg2MjM0NywiZXhwIjoxNzQ2ODYzNTA3fQ.KPj7j4l7wmizYoCrlllz91x2_b7LLofb2JPToC1ucY0" -F "title=la ultima 
+baca" -F "content=la ultima barricada del campo2" -F "userId=1" -F "image=@/home/jose/Descargas/weather.png" h
+ttp://localhost:3000/posts
+```
+## Ejemplo de entrada de post
+```
+curl -X POST \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.\
+eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.\
+SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c" \
+  -F "nombre=Juan" \
+  -F "imagen=@/home/tu_usuario/imagen.jpg" \
+  http://tu-dominio.com/tu-endpoint-para-subir
+```
 ## Project setup
 
 ```bash
