@@ -28,7 +28,13 @@
 
 ## Comandos
 ```bash
+// register:
+curl -X POST -H "Content-Type:application/json" -d '{"username":"felipe","password":"123456", "email":"felipe@gmail.com"}' http://localhost:3000/auth/register
+
+// login
 $ curl  -X POST -H "Content-Type: application/json" -d '{"username":"andres2","password":"123456"}' http://localhost:3000/auth/login
+
+// Authorization
 $  curl -X POST -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuZHJlczIiLCJzdWIiOjQsImlzQWRtaW4iOnRydWUsImlhdCI6MTc0Njg2MDE3MiwiZXhwIjoxNzQ2ODYxMzMyfQ.ZXI1kGdSzyVMbrnRPYByFemPVBEmr3WNgfJzSNHeBkg" -F "title=la ultima barricada" -F "content=la ultima barricada del campo" -F "userId=1" -F "image=@/home/jose/Descargas/weather.png" http://localhost:3000/posts  
 ```
 ```
